@@ -6,7 +6,7 @@ export default function Login() {
         <div>
             <img className = 'w-full h-full object-cover' src={logingImg} alt='' />
         </div>
-        <div className='bg-gray-100 flex flex-col justify-center'>
+        <div className='flex flex-col justify-center'>
             <form className='max-w[400px] w-full mx-auto bg-white p-4'>
                 <h2 className='text-4xl font-bold text-left py-6'>Inicio de Sesion</h2>
                 <div className='flex flex-col py-2'>
@@ -19,9 +19,9 @@ export default function Login() {
                 </div>
                 <div className='flex justify-between'>
                     <p className='flex items-center'><input className='mr-2' type='checkbox'/> Recuerdame</p>
-                    <p> Olvidaste contrasena?</p>
+                    <p> Olvidaste contraseña?</p>
                 </div>
-                <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-400'>Iniciar sesion</button>
+                <button className='border w-full my-5 py-2 bg-blue-600 hover:bg-blue-500 text-white'>Iniciar sesion</button>
             </form>
         </div>
 
