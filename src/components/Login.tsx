@@ -3,31 +3,6 @@ import logingImg from "../assets/marco1.jpeg";
 
 export default function Login() {
   return (
-<<<<<<< Updated upstream
-    <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
-        <div>
-            <img className = 'w-full h-full object-cover' src={logingImg} alt='' />
-        </div>
-        <div className='flex flex-col justify-center'>
-            <form className='max-w[400px] w-full mx-auto bg-white p-4'>
-                <h2 className='text-4xl font-bold text-left py-6'>Inicio de Sesion</h2>
-                <div className='flex flex-col py-2'>
-                    <label>Email</label>
-                    <input className='border p-2'   type='text' placeholder='Email'/>
-                </div>
-                <div className='flex flex-col py-2'>
-                    <label> Contraseña </label>
-                    <input className='border p-2'  type='password' placeholder='Contraseña'/>
-                </div>
-                <div className='flex justify-between'>
-                    <p className='flex items-center'><input className='mr-2' type='checkbox'/> Recuerdame</p>
-                    <p> Olvidaste contraseña?</p>
-                </div>
-                <button className='border w-full my-5 py-2 bg-blue-600 hover:bg-blue-500 text-white'>Iniciar sesion</button>
-            </form>
-        </div>
-
-=======
     <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
       <div className="hidden lg:block relative h-full">
         <img
@@ -70,7 +45,6 @@ export default function Login() {
           </button>
         </form>
       </div>
->>>>>>> Stashed changes
     </div>
   );
 }
