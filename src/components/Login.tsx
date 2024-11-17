@@ -1,7 +1,7 @@
 import React from "react";
 import logingImg from "../assets/marco1.jpeg";
 
-export default function Login() {
+const Login: React.FC = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
       <div className="hidden lg:block relative h-full">
@@ -47,4 +47,6 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+
+export default Login;

@@ -1,20 +1,20 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import Login from './components/Login';
-import Main from './components/Main';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use BrowserRouter instead of Router
+import { routes } from './routes';
 
 /**
- * The main component of the application that renders the Login component.
+ * The main component of the application that renders the routes.
  */
 function App() {
   return (
-    <div >
-      <Main />
-    
-    </div>
-    
-
+    <Router>
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 
