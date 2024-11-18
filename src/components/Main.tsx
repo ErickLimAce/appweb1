@@ -1,7 +1,9 @@
 import React from 'react';
 import Sala from "../assets/Sala.jpeg";
 import MARCOLogotipoOK from "../assets/MARCO-Logotipo-OK.png";
+import Teresa from "../assets/Teresa.png";
 import { useNavigate } from "react-router-dom";
+
 
 export default function Main() {
   const navigate = useNavigate();
@@ -81,10 +83,18 @@ export default function Main() {
         </div>
       </div>
 
+      {/* Evento & Exposiciones */}
+      
+      <div className='bg-green-200'>
+        <h1 className="text-xl font-bold text-green-900 text-center pt-8">Marco</h1>
+        <h1 className="text-4xl font-bold text-green-900 text-center pb-10">EVENTOS Y EXPOSICIONES</h1>
+      </div>
+      <img className='w-full object-cover' src={Teresa} alt="Teresa" />
+
       {/* Contact Section */}
-      <div className="bg-green-200 py-12 px-8">
+      <div className="bg-slate-400 py-12 px-8">
         <div className="text-center space-y-4">
-          <h1 className="text-xl font-medium text-green-700">Contacto</h1>
+          <h1 className="text-xl font-medium text-blue-700">Contacto</h1>
           <p className="text-lg text-gray-700">
             Visítanos en el Museo MARCO, ubicado en el centro de Monterrey, o contáctanos por teléfono o correo electrónico.
           </p>
